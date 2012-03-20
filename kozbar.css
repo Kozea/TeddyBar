@@ -1,0 +1,165 @@
+#kozbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
+  background: -moz-linear-gradient(center bottom, #C6C6C6 0%, #E2E1E2 100%) repeat scroll 0 0 #DDD;
+  background: -webkit-linear-gradient(#C6C6C6,#E2E1E2) repeat scroll 0 0 #DDD;
+  box-shadow: 0 0 5px #fff;
+  border: 1px solid #999;
+  border-bottom: 1px solid #727272;
+}
+
+#kozbar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 1em;
+  float: left;
+}
+
+#kozbar li {
+  display: inline-block;
+}
+
+#kozbar li > input {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  float: left;
+  border: none;
+}
+
+#kozbar li > input::-moz-focus-inner{
+  border: 0;
+}
+
+#kozbar li > input:active {
+  box-shadow:
+  0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+  0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+#kozbar input.bold {
+  background: url(icons/bold.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.italic {
+  background: url(icons/italic.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.underline {
+  background: url(icons/underline.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.strikethrough {
+  background: url(icons/strikethrough.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.paragraph {
+  background: url(icons/paragraph.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.ulist {
+  background: url(icons/list.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.olist {
+  background: url(icons/ordered_list.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.left {
+  background: url(icons/left.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.right {
+  background: url(icons/right.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.center {
+  background: url(icons/center.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.full {
+  background: url(icons/full.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.bigger {
+  background: url(icons/taller.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.lower {
+  background: url(icons/smaller.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.undo {
+  background: url(icons/undo.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.redo {
+  background: url(icons/redo.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.generate {
+  background: url(icons/pdf.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.save {
+  background: url(icons/save.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.upload {
+  background: url(icons/image.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar input.history {
+  background: url(icons/history.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#kozbar select {
+  background: transparent;
+  color: #333;
+  font-size: 0.9em;
+  max-width: 200px;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#kozbar option {
+  background: transparent;
+  color: #333;
+  border-right: 1px solid #444;
+  border-left: 1px solid #444;
+}
+
+#kozbar hr {
+  border: none;
+  border-right: thin dotted #adadad;
+  float: left;
+  width: 1px;
+  height: 50px;
+  margin: 12px 8px;
+}

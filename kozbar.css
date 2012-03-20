@@ -1,4 +1,4 @@
-#kozbar {
+#teddybar {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
   border-bottom: 1px solid #727272;
 }
 
-#kozbar ul {
+#teddybar ul {
   list-style: none;
   padding: 0;
   text-align: center;
@@ -21,11 +21,11 @@
   float: left;
 }
 
-#kozbar li {
+#teddybar li {
   display: inline-block;
 }
 
-#kozbar li > input {
+#teddybar li > input {
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -33,112 +33,112 @@
   border: none;
 }
 
-#kozbar li > input::-moz-focus-inner{
+#teddybar li > input::-moz-focus-inner{
   border: 0;
 }
 
-#kozbar li > input:active {
+#teddybar li > input:active {
   box-shadow:
   0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
   0px 2px 2px 0px rgba(255, 255, 255, 0.5);
 }
 
-#kozbar input.bold {
+#teddybar input.bold {
   background: url(icons/bold.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.italic {
+#teddybar input.italic {
   background: url(icons/italic.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.underline {
+#teddybar input.underline {
   background: url(icons/underline.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.strikethrough {
+#teddybar input.strikethrough {
   background: url(icons/strikethrough.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.paragraph {
+#teddybar input.paragraph {
   background: url(icons/paragraph.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.ulist {
+#teddybar input.ulist {
   background: url(icons/list.png) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.olist {
+#teddybar input.olist {
   background: url(icons/ordered_list.png) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.left {
+#teddybar input.left {
   background: url(icons/left.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.right {
+#teddybar input.right {
   background: url(icons/right.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.center {
+#teddybar input.center {
   background: url(icons/center.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.full {
+#teddybar input.full {
   background: url(icons/full.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.bigger {
+#teddybar input.bigger {
   background: url(icons/taller.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.lower {
+#teddybar input.lower {
   background: url(icons/smaller.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.undo {
+#teddybar input.undo {
   background: url(icons/undo.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.redo {
+#teddybar input.redo {
   background: url(icons/redo.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.generate {
+#teddybar input.generate {
   background: url(icons/pdf.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.save {
+#teddybar input.save {
   background: url(icons/save.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.upload {
+#teddybar input.upload {
   background: url(icons/image.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar input.history {
+#teddybar input.history {
   background: url(icons/history.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#kozbar select {
+#teddybar select {
   background: transparent;
   color: #333;
   font-size: 0.9em;
@@ -148,14 +148,14 @@
   margin-top: 5px;
 }
 
-#kozbar option {
+#teddybar option {
   background: transparent;
   color: #333;
   border-right: 1px solid #444;
   border-left: 1px solid #444;
 }
 
-#kozbar hr {
+#teddybar hr {
   border: none;
   border-right: thin dotted #adadad;
   float: left;

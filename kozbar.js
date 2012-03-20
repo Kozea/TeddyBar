@@ -1,7 +1,7 @@
 (function ($) {
-	$.fn.kozbar = function (options) {
+	$.fn.teddybar = function (options) {
 		var settings = {
-			kozbar_url : "kozbar/kozbar.html",
+			teddybar_url : "teddybar/teddybar.html",
 			document : document, // if iframe use : document.getElementById('iframe').contentWindow.document
 			save : null,
 			generate : null,
@@ -12,7 +12,7 @@
             $.extend(settings, options);
         }
 		return this.each(function () {
-			$(this).load(settings.kozbar_url, function () {
+			$(this).load(settings.teddybar_url, function () {
 				// Puts the toolbar above the body
 				$('body').css({'margin-top': $(this).height()});
 		

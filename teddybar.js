@@ -7,7 +7,7 @@
 			generate : null,
 			upload : null,
 			history : null
-		};
+        };
         if (options) {
             $.extend(settings, options);
         }
@@ -36,9 +36,9 @@
 				
 				// Customized functions
 				$('.save').on('click', function () { settings.save() });
-				$('.generate').on('click', function () { settings.generate(); });
-				$('.upload').on('click', function () { settings.upload(); });
-				$('.history').on('click', function () { settings.history(); });
+				$('.generate').on('click', function () { settings.generate() });
+				$('.upload').on('click', function () { settings.upload() });
+				$('.history').on('click', function () { settings.history() });
 			});
 		});
 	};

@@ -1,0 +1,33 @@
+name: teddybar
+description: A javascript toolbar library
+license: AGPL
+public: true
+url: http://www.teddybar.org
+
+menu:
+  - Documentation:
+      link: /documentation/
+  - Contribute:
+      link: /contribute/
+  - Download:
+      link: /download/
+  
+project (git):
+  url: git://github.com/Kozea/TeddyBar.git
+  path: teddybar
+
+vcs (git):
+  url: git://github.com/Kozea/TeddyBar.git
+  path: /var/db/git/teddybar.git
+
+code browser (github):
+  project name: Kozea/TeddyBar
+
+bug tracker (redmine):
+  base url: http://redmine.kozea.fr/
+  project name: teddybar
+
+continuous integration (jenkins):
+  base url: http://jenkins.kozea.org/
+  project name: teddybar
+

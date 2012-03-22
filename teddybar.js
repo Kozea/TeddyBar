@@ -50,7 +50,7 @@
 			});
 				
 			// execCommand on select elements
-			$('select').on('click','select option', function() {
+			$('select').on('change','select option', function() {
 				var command = $(this).parent().attr('data-command');
 				var value = $(this).val();
 				config.document.execCommand(command, false, value);

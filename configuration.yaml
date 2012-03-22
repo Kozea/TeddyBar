@@ -11,8 +11,6 @@ menu:
       link: /contribute/
   - Download:
       link: /download/
-  - Demo
-      link: /demo/
   
 project (git):
   url: git://github.com/Kozea/TeddyBar.git

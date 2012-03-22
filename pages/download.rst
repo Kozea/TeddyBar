@@ -10,7 +10,7 @@ If you want the development version of teddybar, take a look at the
 
   git clone git://github.com/Kozea/TeddyBar.git
 
-You can also download `the pygal package of the git repository
+You can also download `the teddybar package of the git repository
 <https://github.com/Kozea/TeddyBar/tarball/master>`_.
 
 Linux Distribution Packages

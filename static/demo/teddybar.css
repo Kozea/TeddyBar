@@ -1,0 +1,171 @@
+body > h1{
+  position: relative;
+  top: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: garton,quicksand, sans-serif;
+  text-shadow:1px 1px 2px rgba(10,10,10,0.5);
+}
+
+div[contenteditable] {
+  border: 1px solid gray;
+  outline: none;
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  min-height: 100px;
+  font-family:'latin modern',serif;
+  font-size:1.1em;
+}
+
+body {
+  margin-top:40px;
+}
+
+#teddybar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 1000;
+  width: 100%;
+  min-height: 40px;
+  background: -moz-linear-gradient(center bottom, #C6C6C6 0%, #E2E1E2 100%) repeat scroll 0 0 #DDD;
+  background: -webkit-linear-gradient(#C6C6C6,#E2E1E2) repeat scroll 0 0 #DDD;
+  box-shadow: 0 0 5px #fff;
+  border: 1px solid #999;
+  border-bottom: 1px solid #727272;
+}
+
+#teddybar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.25em 1em;
+  display:inline;
+}
+
+#teddybar li {
+  display: inline-block;
+}
+
+#teddybar li > input {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+}
+
+#teddybar li > input::-moz-focus-inner{
+  border: 0;
+}
+
+#teddybar li > input:active {
+  box-shadow:
+  0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+  0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+#teddybar input.bold {
+  background: url(icons/bold.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.italic {
+  background: url(icons/italic.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.underline {
+  background: url(icons/underline.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.strikethrough {
+  background: url(icons/strikethrough.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.paragraph {
+  background: url(icons/paragraph.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.insertunorderedlist {
+  background: url(icons/list.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.insertorderedlist {
+  background: url(icons/ordered_list.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.justifyleft {
+  background: url(icons/left.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.justifyright {
+  background: url(icons/right.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.justifycenter {
+  background: url(icons/center.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.justifyfull {
+  background: url(icons/full.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.undo {
+  background: url(icons/undo.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.redo {
+  background: url(icons/redo.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.generate {
+  background: url(icons/pdf.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.save {
+  background: url(icons/save.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.upload {
+  background: url(icons/image.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar input.history {
+  background: url(icons/history.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#teddybar select {
+  background: transparent;
+  color: #333;
+  font-size: 0.9em;
+  max-width: 200px;
+  overflow: hidden;
+  position:relative;
+  top:7px;
+}
+
+#teddybar option {
+  background: transparent;
+  color: #333;
+  border-right: 1px solid #444;
+  border-left: 1px solid #444;
+}

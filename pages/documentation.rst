@@ -6,7 +6,10 @@
 User documentation
 ==================
 
-- First steps : Learn how to very simply implement the toolbar.
+WARNING : This toolbar uses HTML5 functions.
+
+First steps : Learn how to very simply implement the toolbar.
+-------------------------------------------------------------
 
 First you need to download the teddybar package, see the `download page </download>`_.
 
@@ -15,18 +18,25 @@ When it's done, you are ready to implement the toolbar:
 .. code-block:: html
 
   <head>
-  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>     # import jQuery
-		<script src="teddybar.js"></script>                                                     # import the teddybar script...
-		<link href="teddybar.css" media="screen" type="text/css" rel="stylesheet" />            # ...And the stylesheet
-		<script>
-			$(function () {
-				$("#teddybar").teddybar();                                                          # Create a teddybar module
-			});
-		</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="teddybar.js"></script>
+    <link href="teddybar.css" media="screen" type="text/css" rel="stylesheet" />
+    <script>
+      $(function () {
+        $("#teddybar").teddybar();
+      });
+    </script>
   </head>
 
+How it works :
+ - import jQuery
+ - import the teddybar script
+ - import the teddybar stylesheet
+ - Create a teddybar module
 
-- Configuration : See how you can customize it !
+
+Configuration : See how you can customize it !
+----------------------------------------------
 
 Open ``teddybar.js`` and change the settings variable the way you need it.
 
@@ -35,18 +45,25 @@ Open ``teddybar.js`` and change the settings variable the way you need it.
   var config = {
     document : document, // if iframe use : document.getElementById('iframe').contentWindow.document
     menu : {
-      //Put here the things you want in the toolbar
+      //'Label_button': command
       'Bold': 'bold',
-      'Italic': 'italic',
-      'Underline': 'underline'
+      'Save': 'save',
+      'separator1': null
+      'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]
     },
     commands : {
-      // Enter your own commands here e.g. : 'save': function(){ alert('TODO') }
+      //'function_name': your_func()
+      'save': function(){ alert('Save your document !') }
     }
   };
+  
 
-Developer documentation
-========================
+If you want to create a button, just put a simple key/value in the menu like ``'Bold': 'bold'``
 
-*TODO*
+The key stands for the label whereas the value is the name of your function (it uses ``execCommand by default``, but feel free to redefine your own function). `Click here to see all the commands supported by execCommand <http://www.w3.org/TR/html5/dnd.html#execCommand>`_.
 
+You can create <select> options by creating an array in the value like ``'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]``
+
+Of course you can create icon groups by using a separator. Simply set the value of your property to ``null``, e.g. ``'separator': null``.
+
+For more information, see the `demo page </demo>`_.

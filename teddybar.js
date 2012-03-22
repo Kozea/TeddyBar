@@ -50,8 +50,8 @@
 			});
 			
 			// execCommand on select elements
-			$('select').on('change','select option', function() {
-				var command = $(this).parent().attr('data-command');
+			$('select').change(function() {
+				var command = $(this).attr('data-command');
 				var value = $(this).val();
 				config.document.execCommand(command, false, value);
 			});

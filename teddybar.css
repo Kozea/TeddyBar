@@ -1,3 +1,7 @@
+body {
+	margin-top:40px;
+}
+
 #teddybar {
   position: fixed;
   top: 0;
@@ -5,7 +9,7 @@
   display: block;
   z-index: 1000;
   width: 100%;
-  height: 60px;
+  min-height: 40px;
   background: -moz-linear-gradient(center bottom, #C6C6C6 0%, #E2E1E2 100%) repeat scroll 0 0 #DDD;
   background: -webkit-linear-gradient(#C6C6C6,#E2E1E2) repeat scroll 0 0 #DDD;
   box-shadow: 0 0 5px #fff;
@@ -16,9 +20,8 @@
 #teddybar ul {
   list-style: none;
   padding: 0;
-  text-align: center;
-  margin: 1em;
-  float: left;
+  margin: 0.25em 1em;
+	display:inline;
 }
 
 #teddybar li {
@@ -29,8 +32,8 @@
   width: 32px;
   height: 32px;
   cursor: pointer;
-  float: left;
   border: none;
+  font-size: 0;
 }
 
 #teddybar li > input::-moz-focus-inner{
@@ -68,43 +71,33 @@
   background-size: 100% 100%;
 }
 
-#teddybar input.ulist {
+#teddybar input.insertunorderedlist {
   background: url(icons/list.png) no-repeat;
   background-size: 100% 100%;
 }
 
-#teddybar input.olist {
+#teddybar input.insertorderedlist {
   background: url(icons/ordered_list.png) no-repeat;
   background-size: 100% 100%;
 }
 
-#teddybar input.left {
+#teddybar input.justifyleft {
   background: url(icons/left.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#teddybar input.right {
+#teddybar input.justifyright {
   background: url(icons/right.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#teddybar input.center {
+#teddybar input.justifycenter {
   background: url(icons/center.svg) no-repeat;
   background-size: 100% 100%;
 }
 
-#teddybar input.full {
+#teddybar input.justifyfull {
   background: url(icons/full.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.bigger {
-  background: url(icons/taller.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.lower {
-  background: url(icons/smaller.svg) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -144,8 +137,8 @@
   font-size: 0.9em;
   max-width: 200px;
   overflow: hidden;
-  display: inline-block;
-  margin-top: 5px;
+	position:relative;
+	top:7px;
 }
 
 #teddybar option {
@@ -153,13 +146,4 @@
   color: #333;
   border-right: 1px solid #444;
   border-left: 1px solid #444;
-}
-
-#teddybar hr {
-  border: none;
-  border-right: thin dotted #adadad;
-  float: left;
-  width: 1px;
-  height: 50px;
-  margin: 12px 8px;
 }

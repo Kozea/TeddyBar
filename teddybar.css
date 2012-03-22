@@ -1,5 +1,5 @@
 body {
-	margin-top:40px;
+  margin-top:40px;
 }
 
 #teddybar {
@@ -21,7 +21,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0.25em 1em;
-	display:inline;
+  display:inline;
 }
 
 #teddybar li {
@@ -137,8 +137,8 @@ body {
   font-size: 0.9em;
   max-width: 200px;
   overflow: hidden;
-	position:relative;
-	top:7px;
+  position:relative;
+  top:7px;
 }
 
 #teddybar option {

@@ -8,12 +8,14 @@
 				'Underline': 'underline',
 				'Strikethrough': 'strikethrough',
 				'-1': null,
-				'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}],
-				'Font Size': ['fontsize', {'1 (8pt)': '1', '2 (10pt)': '2','3 (12pt)': '3','4 (14pt)': '4','5 (18pt)': '5','6 (24pt)': '6','7 (36pt)': '7'}],
-				'Format': ['formatblock', {'Heading 1': 'h1','Heading 2': 'h2','Heading 3': 'h3','Heading 4': 'h4','Heading 5': 'h5','Heading 6': 'h6','Paragraph': 'p','Preformatted': 'pre'}],
+				'Font Name': ['fontname', {'-- Font Name --': '0','Fontin': 'fontin', 'Latin': 'latin modern'}],
+				'Font Size': ['fontsize', {'-- Font Size --': '0','1 (8pt)': '1', '2 (10pt)': '2','3 (12pt)': '3','4 (14pt)': '4','5 (18pt)': '5','6 (24pt)': '6','7 (36pt)': '7'}],
+				'Format': ['formatblock', {'-- Block Format --': '0','Heading 1': 'h1','Heading 2': 'h2','Heading 3': 'h3','Heading 4': 'h4','Heading 5': 'h5','Heading 6': 'h6','Paragraph': 'p','Preformatted': 'pre'}],
 				'-2': null,
 				'Numbered List': 'insertorderedlist',
 				'Unnumbered List': 'insertunorderedlist',
+				'-5': null,
+				'Superscript': 'superscript',
 				'-3': null,
 				'Justify Left': 'justifyleft',
 				'Justify Right': 'justifyright',
@@ -21,7 +23,9 @@
 				'Justify Full': 'justifyfull',		
 				'-4': null,
 				'Undo': 'undo',
-				'Redo': 'redo'
+				'Redo': 'redo',
+				'-5': null,
+				'Save': 'save'
 			},
 			commands : {
 				// Enter your own commands here e.g. : 'save': function(){ alert('TODO') }
@@ -53,7 +57,11 @@
 			$('select').change(function() {
 				var command = $(this).attr('data-command');
 				var value = $(this).val();
-				config.document.execCommand(command, false, value);
+				if (command in config.commands) {
+					config.commands[command](value);
+				} else {
+					config.document.execCommand(command,false,value);
+				}
 			});
             
 			// execCommand on input elements

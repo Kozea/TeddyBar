@@ -1,4 +1,4 @@
-// Copyright (C) 2011 Kozea
+// Copyright (C) 2012 Kozea
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as

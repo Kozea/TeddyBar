@@ -72,12 +72,12 @@ body {
 }
 
 #teddybar input.insertunorderedlist {
-  background: url(icons/list.png) no-repeat;
+  background: url(icons/list.svg) no-repeat;
   background-size: 100% 100%;
 }
 
 #teddybar input.insertorderedlist {
-  background: url(icons/ordered_list.png) no-repeat;
+  background: url(icons/ordered_list.svg) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -113,21 +113,6 @@ body {
 
 #teddybar input.generate {
   background: url(icons/pdf.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.save {
-  background: url(icons/save.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.upload {
-  background: url(icons/image.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.history {
-  background: url(icons/history.svg) no-repeat;
   background-size: 100% 100%;
 }
 

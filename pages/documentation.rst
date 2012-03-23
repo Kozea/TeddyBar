@@ -6,7 +6,7 @@
 User documentation
 ==================
 
-WARNING : This toolbar uses HTML5 functions.
+Teddybar is a HTML5 WYSIWYG editor.
 
 First steps : Learn how to very simply implement the toolbar.
 -------------------------------------------------------------
@@ -31,8 +31,11 @@ When it's done, you are ready to implement the toolbar:
 How it works :
  - import jQuery
  - import the teddybar script
- - import the teddybar stylesheet
+ - import the teddybar stylesheet (or create your own stylesheet)
  - Create a teddybar module
+ 
+Then you need to create a HTML element e.g a ``<div id="teddybar">``. 
+Finally just declare an element with the attribute ``contenteditable``.
 
 
 Configuration : See how you can customize it !
@@ -43,7 +46,7 @@ Open ``teddybar.js`` and change the settings variable the way you need it.
 .. code-block:: javascript
 
   var config = {
-    document : document, // if iframe use : document.getElementById('iframe').contentWindow.document
+    document : document,
     menu : {
       //'Label_button': command
       'Bold': 'bold',
@@ -56,14 +59,14 @@ Open ``teddybar.js`` and change the settings variable the way you need it.
       'save': function(){ alert('Save your document !') }
     }
   };
-  
+
 
 If you want to create a button, just put a simple key/value in the menu like ``'Bold': 'bold'``
 
-The key stands for the label whereas the value is the name of your function (it uses ``execCommand by default``, but feel free to redefine your own function). `Click here to see all the commands supported by execCommand <http://www.w3.org/TR/html5/dnd.html#execCommand>`_.
+The key stands for the label whereas the value is the name of your function (it uses ``execCommand by default``, but feel free to redefine your own functions). `Click here to see all the commands supported by execCommand <http://www.w3.org/TR/html5/dnd.html#execCommand>`_.
 
 You can create <select> options by creating an array in the value like ``'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]``
 
-Of course you can create icon groups by using a separator. Simply set the value of your property to ``null``, e.g. ``'separator': null``.
+You can also create icon groups by using a separator. Simply set the value of your property to ``null``, e.g. ``'separator': null``.
 
-For more information, see the `demo page </demo>`_.
+If you want to see how it looks, see the `demo page </demo>`_.

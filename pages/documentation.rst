@@ -83,4 +83,4 @@ When calling the teddybar, you can add your own functions:
 
 It's very easy and you don't have to edit the javascript.
 
-If you want to see how it looks, see the `demo page </demo>`_.
+If you want to see how it looks, see the `demo page </demo/demo.html>`_.

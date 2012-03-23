@@ -5,7 +5,7 @@
 As a Lazy Person
 ================
 
-Want to write kind words? Please contact guillaume.ayoub@kozea.fr.
+Want to write kind words? Please contact aymeric.bois@kozea.fr or jeremy.james@kozea.fr.
 
 
 As a Jabberer

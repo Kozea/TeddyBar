@@ -63,10 +63,24 @@ Open ``teddybar.js`` and change the settings variable the way you need it.
 
 If you want to create a button, just put a simple key/value in the menu like ``'Bold': 'bold'``
 
-The key stands for the label whereas the value is the name of your function (it uses ``execCommand by default``, but feel free to redefine your own functions). `Click here to see all the commands supported by execCommand <http://www.w3.org/TR/html5/dnd.html#execCommand>`_.
+The key stands for the label whereas the value is the name of your function (it uses ``execCommand`` by default, but feel free to redefine your own functions). `Click here to see all the commands supported by execCommand <http://www.w3.org/TR/html5/dnd.html#execCommand>`_.
 
 You can create <select> options by creating an array in the value like ``'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]``
 
 You can also create icon groups by using a separator. Simply set the value of your property to ``null``, e.g. ``'separator': null``.
+
+
+Configure your functions on call
+--------------------------------
+
+When calling the teddybar, you can add your own functions:
+
+.. code-block:: javascript
+
+  $("#teddybar").teddybar({
+    'save': function(){ alert('Save your document !') }
+  });
+
+It's very easy and you don't have to edit the javascript.
 
 If you want to see how it looks, see the `demo page </demo>`_.

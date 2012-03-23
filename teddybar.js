@@ -14,8 +14,6 @@
 				'-2': null,
 				'Numbered List': 'insertorderedlist',
 				'Unnumbered List': 'insertunorderedlist',
-				'-5': null,
-				'Superscript': 'superscript',
 				'-3': null,
 				'Justify Left': 'justifyleft',
 				'Justify Right': 'justifyright',
@@ -25,7 +23,7 @@
 				'Undo': 'undo',
 				'Redo': 'redo',
 				'-5': null,
-				'Save': 'save'
+				//'Save': 'save'
 			},
 			commands : {
 				// Enter your own commands here e.g. : 'save': function(){ alert('TODO') }

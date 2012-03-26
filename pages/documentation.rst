@@ -28,20 +28,19 @@ When it's done, you are ready to implement the toolbar:
     </script>
   </head>
 
-How it works :
+How TeddyBar works :
  - import jQuery
  - import the teddybar script
  - import the teddybar stylesheet (or create your own stylesheet)
  - Create a teddybar module
  
-Then you need to create a HTML element e.g a ``<div id="teddybar">``. 
-Finally just declare an element with the attribute ``contenteditable``.
+Then you need to create a HTML element e.g a ``<div id="teddybar">`` and put the attribute ``contenteditable`` to make something editable.
 
 
 Configuration : See how you can customize it !
 ----------------------------------------------
 
-Open ``teddybar.js`` and change the settings variable the way you need it.
+Open ``teddybar.js`` and change the config settings the way you need it.
 
 .. code-block:: javascript
 
@@ -50,22 +49,22 @@ Open ``teddybar.js`` and change the settings variable the way you need it.
     menu : {
       //'Label_button': command
       'Bold': 'bold',
-      'Save': 'save',
+      'PrintDocument': 'print',
       'separator1': null
-      'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]
+      'Font Name': ['fontname', {'Serif': 'serif', 'Sans-serif': 'sans-serif'}],
     },
     commands : {
       //'function_name': your_func()
-      'save': function(){ alert('Save your document !') }
+      'print': function(){ alert('Print your document !') }
     }
   };
 
 
-If you want to create a button, just put a simple key/value in the menu like ``'Bold': 'bold'``
+If you want to create a button, just put a simple key/value in the menu like ``'List': 'insertOrderedList'``
 
 The key stands for the label whereas the value is the name of your function (it uses ``execCommand`` by default, but feel free to redefine your own functions). `Click here to see all the commands supported by execCommand <http://www.w3.org/TR/html5/dnd.html#execCommand>`_.
 
-You can create <select> options by creating an array in the value like ``'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]``
+You can create a <select> element by defining an array like ``'Font Name': ['fontname', {'Serif': 'serif', 'Sans-serif': 'sans-serif'}]``
 
 You can also create icon groups by using a separator. Simply set the value of your property to ``null``, e.g. ``'separator': null``.
 
@@ -78,10 +77,8 @@ When calling the teddybar, you can add your own buttons and their functions:
 .. code-block:: javascript
 
   $("#teddybar").teddybar({
-    menu:{'save':'save'},
-    commands:{'save': function(){alert('Save your document !')}}
+    menu: {'Save':'save_func'},
+    commands: {'save_func': function(){alert('Save your document !')}}
   });
-
-It's very easy and you don't have to edit the javascript.
 
 If you want to see how it looks, see the `demo page </demo/demo.html>`_.

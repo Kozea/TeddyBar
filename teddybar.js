@@ -46,7 +46,7 @@
 			}
 		};
 	        if (options) {
-			$.extend(config, options);
+			$.extend(true, config, options);
 	        }
 		return this.each(function () {
 			var $this=$(this);

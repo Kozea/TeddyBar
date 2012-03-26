@@ -73,12 +73,13 @@ You can also create icon groups by using a separator. Simply set the value of yo
 Configure your functions on call
 --------------------------------
 
-When calling the teddybar, you can add your own functions:
+When calling the teddybar, you can add your own buttons and their functions:
 
 .. code-block:: javascript
 
   $("#teddybar").teddybar({
-    'save': function(){ alert('Save your document !') }
+    menu:{'save':'save'},
+    commands:{'save': function(){alert('Save your document !')}}
   });
 
 It's very easy and you don't have to edit the javascript.

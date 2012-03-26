@@ -17,7 +17,7 @@
 (function ($) {
 	$.fn.teddybar = function (options) {
 		var config = {
-			document : document, // if iframe use : document.getElementById('iframe').contentWindow.document
+			document : function () { return document /* if iframe use : document.getElementById('iframe').contentWindow.document */ },
 			menu : {
 				'Bold': 'bold',
 				'Italic': 'italic',
@@ -74,7 +74,7 @@
 				if (command in config.commands) {
 					config.commands[command](value);
 				} else {
-					config.document.execCommand(command,false,value);
+					config.document().execCommand(command,false,value);
 				}
 			});
             
@@ -84,7 +84,7 @@
 				if (command in config.commands) {
 					config.commands[command]();
 				} else {
-					config.document.execCommand(command,false,'');
+					config.document().execCommand(command,false,'');
 				}
 			});
             

@@ -34,7 +34,9 @@ How TeddyBar works :
  - import the teddybar stylesheet (or create your own stylesheet)
  - Create a teddybar module
  
-Then you need to create a HTML element e.g a ``<div id="teddybar">`` and put the attribute ``contenteditable`` to make something editable.
+Then you need to create a HTML element e.g a ``<div id="teddybar">``.
+
+To define content regions that TeddyBar will make editable you need to add a ``contenteditable`` id attribute to an element.
 
 
 Configuration : See how you can customize it !

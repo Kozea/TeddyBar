@@ -24,7 +24,7 @@
 				'Underline': 'underline',
 				'Strikethrough': 'strikethrough',
 				'-1': null,
-				'Font Name': ['fontname', {'-- Font Name --': '0','Fontin': 'fontin', 'Latin': 'latin modern'}],
+				'Font Name': ['fontname', {'-- Font Name --': '0','Serif': 'serif', 'Sans-serif': 'sans-serif','Courier': 'courrier new'}],
 				'Font Size': ['fontsize', {'-- Font Size --': '0','1 (8pt)': '1', '2 (10pt)': '2','3 (12pt)': '3','4 (14pt)': '4','5 (18pt)': '5','6 (24pt)': '6','7 (36pt)': '7'}],
 				'Format': ['formatblock', {'-- Block Format --': '0','Heading 1': 'h1','Heading 2': 'h2','Heading 3': 'h3','Heading 4': 'h4','Heading 5': 'h5','Heading 6': 'h6','Paragraph': 'p','Preformatted': 'pre'}],
 				'-2': null,

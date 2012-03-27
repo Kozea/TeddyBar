@@ -6,14 +6,12 @@
 User documentation
 ==================
 
-Teddybar is a HTML5 WYSIWYG editor.
-
-First steps : Learn how to very simply implement the toolbar.
+First steps : Learn how to simply implement the toolbar.
 -------------------------------------------------------------
 
-First you need to download the teddybar package, see the `download page </download>`_.
+First you need to download the Teddybar package, see the `download page </download>`_.
 
-When it's done, you are ready to implement the toolbar:
+You are now ready to put the toolbar in your website:
 
 .. code-block:: html
 
@@ -21,27 +19,24 @@ When it's done, you are ready to implement the toolbar:
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script src="teddybar.js"></script>
     <link href="teddybar.css" media="screen" type="text/css" rel="stylesheet" />
-    <script>
-      $(function () {
-        $("#teddybar").teddybar();
-      });
-    </script>
+    <script> $(function () { $("#teddybar").teddybar(); }); </script>
   </head>
 
-How it works :
+How Teddybar works :
  - import jQuery
  - import the teddybar script
  - import the teddybar stylesheet (or create your own stylesheet)
- - Create a teddybar module
+ - Create a teddybar module by calling ``teddybar()``
  
-Then you need to create a HTML element e.g a ``<div id="teddybar">``. 
-Finally just declare an element with the attribute ``contenteditable``.
+Then you need to create a HTML element e.g. a ``<div id="teddybar">``.
+
+To define content regions that teddybar will be able to edit, you need to add the ``contenteditable`` attribute to any element/div.
 
 
 Configuration : See how you can customize it !
 ----------------------------------------------
 
-Open ``teddybar.js`` and change the settings variable the way you need it.
+Open ``teddybar.js`` and change the config settings the way you need it.
 
 .. code-block:: javascript
 
@@ -50,22 +45,22 @@ Open ``teddybar.js`` and change the settings variable the way you need it.
     menu : {
       //'Label_button': command
       'Bold': 'bold',
-      'Save': 'save',
+      'PrintDocument': 'print',
       'separator1': null
-      'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]
+      'Font Name': ['fontname', {'Serif': 'serif', 'Sans-serif': 'sans-serif'}],
     },
     commands : {
       //'function_name': your_func()
-      'save': function(){ alert('Save your document !') }
+      'print': function(){ alert('Print your document !') }
     }
   };
 
 
-If you want to create a button, just put a simple key/value in the menu like ``'Bold': 'bold'``
+If you want to create a button, just put a simple key/value in the menu like ``'List': 'insertOrderedList'``
 
 The key stands for the label whereas the value is the name of your function (it uses ``execCommand`` by default, but feel free to redefine your own functions). `Click here to see all the commands supported by execCommand <http://www.w3.org/TR/html5/dnd.html#execCommand>`_.
 
-You can create <select> options by creating an array in the value like ``'Font Name': ['fontname', {'Fontin': 'fontin', 'Latin': 'latin modern'}]``
+You can create a <select> element by defining an array like ``'Font Name': ['fontname', {'Serif': 'serif', 'Sans-serif': 'sans-serif'}]``
 
 You can also create icon groups by using a separator. Simply set the value of your property to ``null``, e.g. ``'separator': null``.
 
@@ -73,14 +68,13 @@ You can also create icon groups by using a separator. Simply set the value of yo
 Configure your functions on call
 --------------------------------
 
-When calling the teddybar, you can add your own functions:
+When calling teddybar, you can add your own buttons and their functions:
 
 .. code-block:: javascript
 
   $("#teddybar").teddybar({
-    'save': function(){ alert('Save your document !') }
+    menu: {'Save':'save_func'},
+    commands: {'save_func': function(){alert('Save your document !')}}
   });
-
-It's very easy and you don't have to edit the javascript.
 
 If you want to see how it looks, see the `demo page </demo/demo.html>`_.

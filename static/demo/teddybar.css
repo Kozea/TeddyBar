@@ -1,6 +1,13 @@
+body {
+  margin-top:40px;
+}
+
 body > h1{
   position: relative;
   top: 20px;
+}
+
+h1 {
   text-align: center;
   font-family: garton,quicksand, sans-serif;
   text-shadow:1px 1px 2px rgba(10,10,10,0.5);
@@ -16,11 +23,7 @@ div[contenteditable] {
   font-family:'latin modern',serif;
   font-size:1.1em;
 }
-
-body {
-  margin-top:40px;
-}
-
+      
 #teddybar {
   position: fixed;
   top: 0;
@@ -59,7 +62,7 @@ body {
   border: 0;
 }
 
-#teddybar li > input:active {
+#teddybar li > input:active, #teddybar li > input:hover {
   box-shadow:
   0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
   0px 2px 2px 0px rgba(255, 255, 255, 0.5);
@@ -91,12 +94,12 @@ body {
 }
 
 #teddybar input.insertunorderedlist {
-  background: url(icons/list.png) no-repeat;
+  background: url(icons/list.svg) no-repeat;
   background-size: 100% 100%;
 }
 
 #teddybar input.insertorderedlist {
-  background: url(icons/ordered_list.png) no-repeat;
+  background: url(icons/ordered_list.svg) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -132,21 +135,6 @@ body {
 
 #teddybar input.generate {
   background: url(icons/pdf.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.save {
-  background: url(icons/save.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.upload {
-  background: url(icons/image.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-#teddybar input.history {
-  background: url(icons/history.svg) no-repeat;
   background-size: 100% 100%;
 }
 

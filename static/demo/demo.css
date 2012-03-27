@@ -1,10 +1,11 @@
 @font-face {
-  src: url('Philosopher.otf');
+  src: url('../css/Philosopher.otf');
   font-family: "philosopher";
 }
 
 html {
-	background: url(teddy-background.png) no-repeat top right,url(back.png);			
+	background: url(../css/img/teddy-background.png) no-repeat top right,
+							url(../css/img/back.png);			
 }
 
 body > h1{
@@ -32,6 +33,6 @@ div[contenteditable] {
 	color:#111;
 	background: none repeat scroll 0 0 #F4EBDE;
 	border-radius: 5px 5px 5px 5px;
-  	box-shadow: 2px 5px 8px rgba(198, 156, 109, 0.5) inset;
+  box-shadow: 2px 5px 8px rgba(198, 156, 109, 0.5) inset;
 	padding: 0.8em 1.2em;
 }

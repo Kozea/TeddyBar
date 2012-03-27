@@ -16,6 +16,7 @@
 */
 html {
   background: url(img/back.png) repeat top left;
+  border-top: 5px solid #8c6239;
 }
 
 body {
@@ -23,6 +24,8 @@ body {
   font-family: "philosopher";
   font-size: 0.9em;
   margin: 0;
+  display: block;
+  width: 100%;
 }
 
 
@@ -37,13 +40,19 @@ body > header {
   width: 88%;
 }
 
+h1 {
+  margin: 0;
+}
+
 body > header h1 a {
   background: url(img/teddybar.png) no-repeat top left;
   color: transparent; 
   font-size: 0em;
   display: block;
   height: 203px;
+  position: relative; 
   width: 280px;
+  z-index: 5;
 }
 
 
@@ -55,7 +64,8 @@ body > header h1 a {
 nav {
   position: absolute; 
   right: 4px;
-  top: 24px;
+  top: 29px;
+  z-index: 1;
 }
 
 nav ul {
@@ -118,15 +128,14 @@ body > section {
 }
 
 body section a {
-  color: #8c6239;  
-  transition: 0.2s linear;
+  color: #7c532c;  
+  transition: color 0.2s linear;
 }
-
 
 body section a:hover, 
 boyd section a:focus {
-  color: #643e18;
-  transition: 0.3s linear;
+  color: #a9815b;
+  transition: color 0.3s linear;
 }
 
 article > header {
@@ -141,7 +150,7 @@ article header h2 {
   border-radius: 5px;
   color: #80572e;
   font-family: "philosopher";
-  font-size: 2em;
+  font-size: 2.2em;
   margin: 0 -7.5% 8px;
   padding: 0.5em;
   text-align: center;
@@ -149,7 +158,12 @@ article header h2 {
 }
 
 section section {
-  padding-bottom: 15px;
+  background: url(img/separation.png) no-repeat bottom center;
+  padding-bottom: 20px;
+}
+
+section section:last-child {
+  background: none;
 }
 
 section section header h3 {
@@ -164,7 +178,7 @@ section .highlight {
   border-radius: 5px;
 }
 
-section .highlight  pre {
+section .highlight pre {
   margin: 0;
 }
 

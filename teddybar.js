@@ -75,6 +75,7 @@
 				} else {
 					config.document().execCommand(command,false,value);
 				}
+				$(this).children().first().attr('selected','true');
 			});
             
 			// execCommand on input elements

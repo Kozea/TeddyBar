@@ -3,9 +3,6 @@
 ===============
 
 
-User documentation
-==================
-
 First steps : Learn how to simply implement the toolbar.
 -------------------------------------------------------------
 

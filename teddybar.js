@@ -87,8 +87,8 @@
 					config.document().execCommand(command,false,'');
 				}
 			});
-            
-			// function that always puts the toolbar above the body
+            			
+			// Puts the body down, according to the toolbar's height
 			$(window).resize(function() {
 				$('body').css('margin-top',$this.height());
 			});

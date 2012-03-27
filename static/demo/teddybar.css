@@ -81,24 +81,24 @@ div[contenteditable] {
 }
 
 #teddybar input {
-  background-repeat: no-repeat;
+  background-color: transparent;
   background-size: 100% 100%;
 }
 
 #teddybar input.bold {
-  background: url(icons/bold.svg);
+  background-image: url(icons/bold.svg);
 }
 
 #teddybar input.italic {
-  background: url(icons/italic.svg);
+  background-image: url(icons/italic.svg);
 }
 
 #teddybar input.underline {
-  background: url(icons/underline.svg);
+  background-image: url(icons/underline.svg);
 }
 
 #teddybar input.strikethrough {
-  background: url(icons/strikethrough.svg);
+  background-image: url(icons/strikethrough.svg);
 }
 
 #teddybar input.paragraph {
@@ -106,39 +106,39 @@ div[contenteditable] {
 }
 
 #teddybar input.insertunorderedlist {
-  background: url(icons/list.svg);
+  background-image: url(icons/list.svg);
 }
 
 #teddybar input.insertorderedlist {
-  background: url(icons/ordered_list.svg);
+  background-image: url(icons/ordered_list.svg);
 }
 
 #teddybar input.justifyleft {
-  background: url(icons/left.svg);
+  background-image: url(icons/left.svg);
 }
 
 #teddybar input.justifyright {
-  background: url(icons/right.svg);
+  background-image: url(icons/right.svg);
 }
 
 #teddybar input.justifycenter {
-  background: url(icons/center.svg);
+  background-image: url(icons/center.svg);
 }
 
 #teddybar input.justifyfull {
-  background: url(icons/full.svg);
+  background-image: url(icons/full.svg);
 }
 
 #teddybar input.undo {
-  background: url(icons/undo.svg);
+  background-image: url(icons/undo.svg);
 }
 
 #teddybar input.redo {
-  background: url(icons/redo.svg);
+  background-image: url(icons/redo.svg);
 }
 
 #teddybar input.generate {
-  background: url(icons/pdf.svg);
+  background-image: url(icons/pdf.svg);
 }
 
 #teddybar select {

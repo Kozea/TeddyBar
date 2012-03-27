@@ -38,7 +38,6 @@
 				'-4': null,
 				'Undo': 'undo',
 				'Redo': 'redo',
-				'-5': null,
 				//'Save': 'save'
 			},
 			commands : {

@@ -1,10 +1,15 @@
 body {
-  margin-top:40px;
+  display: block;
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 body > h1{
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 
 h1 {
@@ -15,35 +20,42 @@ h1 {
 
 div[contenteditable] {
   border: 1px solid gray;
-  outline: none;
-  width: 50%;
-  margin: auto;
-  padding: 5px;
-  min-height: 100px;
   font-family:'latin modern',serif;
   font-size:1.1em;
+  margin: 50px auto;
+  min-height: 100px;
+  outline: none;
+  padding: 5px;
+  width: 50%;
 }
       
 #teddybar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  z-index: 1000;
-  width: 100%;
-  min-height: 40px;
-  background: -moz-linear-gradient(center bottom, #C6C6C6 0%, #E2E1E2 100%) repeat scroll 0 0 #DDD;
-  background: -webkit-linear-gradient(#C6C6C6,#E2E1E2) repeat scroll 0 0 #DDD;
-  box-shadow: 0 0 5px #fff;
+  background: -moz-linear-gradient(center bottom, #C6C6C6 0%, #E2E1E2 100%);
+  background: -webkit-linear-gradient(#C6C6C6, #E2E1E2); 
   border: 1px solid #999;
   border-bottom: 1px solid #727272;
+  box-shadow: 0 0 5px #fff;
+  display: block;
+  left: 0;
+  min-height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-#teddybar ul {
+#teddybar ul {  
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #bfbfbf;
   list-style: none;
-  padding: 0;
-  margin: 0.25em 1em;
-  display:inline;
+  padding: 0 1em;
+  margin: 0.25em 0;
+  display: inline-block;
+  height: 32px;
+}
+
+#teddybar ul:last-child {
+  border-right: none;
 }
 
 #teddybar li {
@@ -58,84 +70,75 @@ div[contenteditable] {
   font-size: 0;
 }
 
-#teddybar li > input::-moz-focus-inner{
+#teddybar li > input::-moz-focus-inner {
   border: 0;
 }
 
 #teddybar li > input:active, #teddybar li > input:hover {
   box-shadow:
-  0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
-  0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+  0px 2px 2px rgba(0, 0, 0, 0.5) inset,
+  0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+#teddybar input {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 #teddybar input.bold {
-  background: url(icons/bold.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/bold.svg);
 }
 
 #teddybar input.italic {
-  background: url(icons/italic.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/italic.svg);
 }
 
 #teddybar input.underline {
-  background: url(icons/underline.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/underline.svg);
 }
 
 #teddybar input.strikethrough {
-  background: url(icons/strikethrough.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/strikethrough.svg);
 }
 
 #teddybar input.paragraph {
-  background: url(icons/paragraph.svg) no-repeat;
-  background-size: 100% 100%;
+  background-image: url(icons/paragraph.svg);
 }
 
 #teddybar input.insertunorderedlist {
-  background: url(icons/list.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/list.svg);
 }
 
 #teddybar input.insertorderedlist {
-  background: url(icons/ordered_list.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/ordered_list.svg);
 }
 
 #teddybar input.justifyleft {
-  background: url(icons/left.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/left.svg);
 }
 
 #teddybar input.justifyright {
-  background: url(icons/right.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/right.svg);
 }
 
 #teddybar input.justifycenter {
-  background: url(icons/center.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/center.svg);
 }
 
 #teddybar input.justifyfull {
-  background: url(icons/full.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/full.svg);
 }
 
 #teddybar input.undo {
-  background: url(icons/undo.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/undo.svg);
 }
 
 #teddybar input.redo {
-  background: url(icons/redo.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/redo.svg);
 }
 
 #teddybar input.generate {
-  background: url(icons/pdf.svg) no-repeat;
-  background-size: 100% 100%;
+  background: url(icons/pdf.svg);
 }
 
 #teddybar select {
@@ -145,12 +148,12 @@ div[contenteditable] {
   max-width: 200px;
   overflow: hidden;
   position:relative;
-  top:7px;
+  top: 4px;
 }
 
 #teddybar option {
   background: transparent;
-  color: #333;
   border-right: 1px solid #444;
   border-left: 1px solid #444;
+  color: #333;
 }

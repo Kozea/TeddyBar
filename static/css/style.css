@@ -154,9 +154,25 @@ section section {
 
 section section header h3 {
   color: #8c6239;
-  font-size: 1.6em;
+  font-size: 1.7em;
 } 
 
+section .highlight {
+  background: #f4ebde;
+  box-shadow: 2px 5px 8px rgba(198, 156, 109, 0.5) inset;
+  padding: 0.8em 1.2em;
+  border-radius: 5px;
+}
+
+section .highlight  pre {
+  margin: 0;
+}
+
+/*
+  ----------
+  - FOOTER -
+  ----------
+*/
 footer {
   background: #8c6239 url(img/footer.png) repeat-x top left;
   text-align: center;

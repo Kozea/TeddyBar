@@ -6,14 +6,12 @@
 User documentation
 ==================
 
-Teddybar is a HTML5 WYSIWYG editor.
-
-First steps : Learn how to very simply implement the toolbar.
+First steps : Learn how to simply implement the toolbar.
 -------------------------------------------------------------
 
-First you need to download the teddybar package, see the `download page </download>`_.
+First you need to download the Teddybar package, see the `download page </download>`_.
 
-When it's done, you are ready to implement the toolbar:
+You are now ready to put the toolbar in your website:
 
 .. code-block:: html
 
@@ -21,22 +19,18 @@ When it's done, you are ready to implement the toolbar:
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script src="teddybar.js"></script>
     <link href="teddybar.css" media="screen" type="text/css" rel="stylesheet" />
-    <script>
-      $(function () {
-        $("#teddybar").teddybar();
-      });
-    </script>
+    <script> $(function () { $("#teddybar").teddybar(); }); </script>
   </head>
 
-How TeddyBar works :
+How Teddybar works :
  - import jQuery
  - import the teddybar script
  - import the teddybar stylesheet (or create your own stylesheet)
- - Create a teddybar module
+ - Create a teddybar module by calling ``teddybar()``
  
-Then you need to create a HTML element e.g a ``<div id="teddybar">``.
+Then you need to create a HTML element e.g. a ``<div id="teddybar">``.
 
-To define content regions that TeddyBar will make editable you need to add a ``contenteditable`` id attribute to an element.
+To define content regions that teddybar will be able to edit, you need to add the ``contenteditable`` attribute to any element/div.
 
 
 Configuration : See how you can customize it !
@@ -74,7 +68,7 @@ You can also create icon groups by using a separator. Simply set the value of yo
 Configure your functions on call
 --------------------------------
 
-When calling the teddybar, you can add your own buttons and their functions:
+When calling teddybar, you can add your own buttons and their functions:
 
 .. code-block:: javascript
 

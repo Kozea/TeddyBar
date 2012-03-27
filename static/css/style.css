@@ -1,0 +1,180 @@
+/*
+  -------------
+  - FONT FACE -
+  -------------
+*/
+@font-face {
+  font-family: "philosopher";
+  src: url(Philosopher.otf);
+}
+
+
+/*
+  ----------
+  - COMMON -
+  ----------
+*/
+html {
+  background: url(img/back.png) repeat top left;
+}
+
+body {
+  background: url(img/background-body.png) repeat-x top left;
+  font-family: "philosopher";
+  font-size: 0.9em;
+  margin: 0;
+}
+
+
+/*
+  ----------
+  - HEADER -
+  ----------
+*/
+body > header {
+  height: 175px;
+  margin: 0 6%;
+  width: 88%;
+}
+
+body > header h1 a {
+  background: url(img/teddybar.png) no-repeat top left;
+  color: transparent; 
+  font-size: 0em;
+  display: block;
+  height: 203px;
+  width: 280px;
+}
+
+
+/*
+  -------
+  - NAV -
+  -------
+*/
+nav {
+  position: absolute; 
+  right: 4px;
+  top: 24px;
+}
+
+nav ul {
+  display: inline;
+  list-style: none;
+}
+
+nav ul li  {
+  border-left: 1px solid #efe5d6;
+  display: inline-block;
+  width: 176px;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block; 
+  color: #8c6239;
+  font-size: 1.3em;
+  width: 180px;
+  height: 116px;
+  padding-top: 35px;
+  transition: 0.2s linear;
+}
+
+nav ul li:first-child a {
+  background: url(img/icon-documentation.png) no-repeat center 65px;
+}
+
+nav ul li:nth-child(2) a {
+  background: url(img/icon-contribute.png) no-repeat center 65px;
+}
+
+nav ul li:nth-child(3) a {
+  background: url(img/icon-download.png) no-repeat center 65px;
+}
+
+nav ul li:last-child a {
+  background: url(img/icon-demo.png) no-repeat center 65px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  box-shadow: 0 0 20px rgba(198, 156, 109, 0.5) inset;
+  color: #784f27;
+  transition: 0.2s linear;
+}
+
+
+/*
+  -----------
+  - SECTION -
+  -----------
+*/
+body > section {
+  border-radius: 8px;
+  background: #fff;
+  padding: 20px 5%;
+  margin: 90px 6% 40px;
+  width: 80%;
+}
+
+body section a {
+  color: #8c6239;  
+  transition: 0.2s linear;
+}
+
+
+body section a:hover, 
+boyd section a:focus {
+  color: #643e18;
+  transition: 0.3s linear;
+}
+
+article > header {
+  background: url(img/shadow.png) no-repeat bottom center;
+  padding-bottom: 3px;
+}
+
+
+article header h2 {
+  background: linear-gradient( #d6b48d, #c69c6d);
+  border: 1px solid #c69c6d;
+  border-radius: 5px;
+  color: #80572e;
+  font-family: "philosopher";
+  font-size: 2em;
+  margin: 0 -7.5% 8px;
+  padding: 0.5em;
+  text-align: center;
+  text-shadow: 1px 1px 1px #dfc6aa;
+}
+
+section section {
+  padding-bottom: 15px;
+}
+
+section section header h3 {
+  color: #8c6239;
+  font-size: 1.6em;
+} 
+
+footer {
+  background: #8c6239 url(img/footer.png) repeat-x top left;
+  text-align: center;
+  padding: 0.8em 0;
+}
+
+footer ul {
+  margin: 0;
+  display: inline;
+
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  color: #643f1c;
+  margin: 0 5px;
+  text-shadow: 1px 1px 1px #a9835d;
+}

@@ -76,7 +76,7 @@ div[contenteditable] {
 
 #teddybar li > input:hover, 
 #teddybar li > input:focus {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #teddybar li > input:active {

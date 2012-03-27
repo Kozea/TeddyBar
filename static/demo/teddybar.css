@@ -1,34 +1,3 @@
-body {
-  display: block;
-  height: 100%;
-  margin: 0;
-  min-height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-body > h1{
-  position: relative;
-  top: 30px;
-}
-
-h1 {
-  text-align: center;
-  font-family: garton,quicksand, sans-serif;
-  text-shadow:1px 1px 2px rgba(10,10,10,0.5);
-}
-
-div[contenteditable] {
-  border: 1px solid gray;
-  font-family:'latin modern',serif;
-  font-size:1.1em;
-  margin: 50px auto;
-  min-height: 100px;
-  outline: none;
-  padding: 5px;
-  width: 50%;
-}
-      
 #teddybar {
   background: -moz-linear-gradient(center bottom, #C6C6C6 0%, #E2E1E2 100%);
   background: -webkit-linear-gradient(#C6C6C6, #E2E1E2); 

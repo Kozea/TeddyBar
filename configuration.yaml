@@ -2,7 +2,7 @@ name: Teddybar
 description: A light HTML5 WYSIWYG editor
 license: AGPL
 public: true
-url: http://www.teddybar.org
+url: http://www.teddybar.org/
 
 menu:
   - Documentation:

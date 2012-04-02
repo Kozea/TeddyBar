@@ -173,6 +173,7 @@ section section header h3 {
 
 section .highlight {
   background: #f4ebde;
+  font-weight: bold;
   box-shadow: 2px 5px 8px rgba(198, 156, 109, 0.5) inset;
   padding: 0.8em 1.2em;
   border-radius: 5px;

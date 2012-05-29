@@ -44,9 +44,9 @@
 				// Enter your own commands here e.g. : 'save': function(){ alert('TODO') }
 			}
 		};
-	        if (options) {
+    if (options) {
 			$.extend(true, config, options);
-	        }
+		}
 		return this.each(function () {
 			var $this=$(this);
 			var block = $('<ul>').appendTo($this);
@@ -67,7 +67,7 @@
 			});
 			
 			// execCommand on select elements
-			$('select').change(function() {
+			$this.find('select').change(function() {
 				var command = $(this).attr('data-command');
 				var value = $(this).val();
 				if (command in config.commands) {
